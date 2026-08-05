@@ -428,27 +428,19 @@ window.addEventListener("scroll",()=>{
 ========================================== */
 
 
-const form =
-document.querySelector("#contact form");
+const form = document.getElementById("contact-form");
 
+form.addEventListener("submit", function () {
 
+    setTimeout(() => {
 
-form.addEventListener("submit",(e)=>{
+        alert("Thank you! Your message has been sent.");
 
+        form.reset();
 
-    e.preventDefault();
-
-
-    alert(
-    "Thank you for contacting me! I will get back to you soon."
-    );
-
-
-    form.reset();
-
+    }, 1000);
 
 });
-
 
 
 

@@ -127,7 +127,7 @@
                     <i class="fa-solid fa-envelope"></i>
 
                 </a>
- <a href="https://sobdokolpodroom.wordpress.com/">
+ <a href="https://thisisthetimedotcom.wordpress.com/">
 
                     <i class="fab fa-wordpress"></i>
 
@@ -462,30 +462,39 @@
     </section>
 
     <!-- ================= CONTACT ================= -->
+<section id="contact">
 
-    <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
-        <h2 class="section-title">
-            Contact Me
-        </h2>
+    <form id="contact-form"
+          action="https://script.google.com/macros/s/AKfycbzfAVWGFNP1WomgR8RKgCOwDsZ1jqYuQHuM21phAiJhwMVkBZgdHVK-XRzDULg0EY4/exec"
+          method="POST"
+          target="hidden_iframe">
 
-        <form>
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
 
-            <input type="text" placeholder="Your Name">
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
 
-            <input type="email" placeholder="Your Email">
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required></textarea>
 
-            <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
 
-            <button type="submit" class="btn">
+    </form>
 
-                Send Message
+    <iframe
+        name="hidden_iframe"
+        style="display:none;"></iframe>
 
-            </button>
-
-        </form>
-
-    </section>
+</section>
     <!-- ================= QR CODE ================= -->
 
 <section id="qrcode">
